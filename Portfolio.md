@@ -84,9 +84,33 @@ In most of my scripts I have used cross validation and SKLearn evaluation metric
 
 ## Data preprocessing
 ### Data exploration
+The WebIQ dataset we got from TNO and the Agora dataset we found on Kaggle differed quite a lot, the Agora dataset is about 10 times as large but the records are smaller, the WebIQ has fewer but longer records.
+
+![wordcount](./Images/word_count.PNG)
+
+Because other group members focused on visualizing I did not visualize the raw data itself. 
+
+I did an experiment with a method called LSH (Locality Sensitive Hashing) which creates vectors based on boundaries created in a vector space and visualized the results of this experiment.
+[LSH](./Notebooks/LSH_MinHash.ipynb)
+
+I quickly concluded that this method of vectorization was not applicable on this data since the TSNE plot did not cluster the records in any way.
+
 ### Data cleansing
+For data cleansing I mainly used pandas standard method to drop records that were unusable, since the data I was cleansing were single documents it did not matter if I removed data.
+
 ### Data preparation
+The data preparation for this project was solely done by preprocessing the text data. Some examples of preprocessing the text data are:
+
+- removing numbers
+- removing unicode characters
+- stemming/lemmatizing verbs
+- lowercasing everything
+
 ### Data explanation
+The Agora dataset we found on Kaggle is a CSV file consisting of about 110.000 records with multiple columns. For this project only the "Category", "Item" and "Item Description" columns were relevant. The category was the label of the data and the item + item description together formed the data we fed into the machine learning models.
+
+The WebIQ dataset looked similar, I cant really say how it exactly looked since we have only seen it once.
+
 ### Data visualization (exploratory)
 
 
