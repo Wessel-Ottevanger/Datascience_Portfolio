@@ -77,10 +77,10 @@ I did try tweaking the parameters on a sklearn neural network (before we knew th
 One of the reasons I have tried Ensemble learning is because it can help against under- or overfitting. When using an ensemble of machine learning models it will smooth out the predictions of multiple models and by doing this it reduces the effects of an under- or overfitted model.
 
 ### Evaluating a model
-In most of my scripts I have used cross validation and SKLearn evaluation metrics to evaluate the models I have trained. In the Ensemble learning script mentioned above I have specifically picked these classifiers because most work in a completely different way. One example of this is that in this script I am using a Logistic regression classifier and a Linear SVC model, which are similar, but work together with a Decision tree classifier and a Guassian naive bayes classifier.
+In most of my scripts I have used cross validation and SKLearn evaluation metrics to evaluate the models I have trained. In the Ensemble learning script mentioned above I have specifically picked these classifiers because most work in a completely different way.
 
 ### Visualizing the outcome of a model (explanatory)
- ////TODO script maken toevoegen :(
+[In this notebook](./Notebooks/Visualizing_outcome_model.ipynb) I have created a heatmap of the confusion matrix of 4 different classifiers to see how the classifiers were affected by the bias in the dataset. If you compare the confusion matrices you can see that the Multinomial Logistic Regression classifier is the most affected and that the Linear SVC and the Decision Tree classifier were relatively unaffected.
 
 ## Data preprocessing
 ### Data exploration
