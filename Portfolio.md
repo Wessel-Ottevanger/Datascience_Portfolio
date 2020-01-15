@@ -16,7 +16,7 @@ During this research I have gained experience and knowledge about:
 - Using various machine learning models to train on these vectors
 
 ### Explanation of Terminology, jargon and definitions
-[Terminology list.](./reflection_own_project_contribution.md)
+[Terminology list.](./terminology.md)
 ## Reflection
 
 - [Reflection on own contribution to the project.](./reflection_own_project_contribution.md) 
