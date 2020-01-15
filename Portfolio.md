@@ -41,10 +41,10 @@ I conclude that the results on the Agora dataset were a lot higher than on the W
 
 ### Planning 
 The global planning we made in the beginning of the project:
-![Planning](./Images/Planning.jpg)
+![Planning](./Images/Planning.png)
 
 We used SCRUM as a development method and used trello to create a scrumboard to keep track of all the tasks.
-![Trello](./Images/Trello.jpg)
+![Trello](./Images/Trello.png)
 
 ## Predictive analysis
 ### Selecting a Model
