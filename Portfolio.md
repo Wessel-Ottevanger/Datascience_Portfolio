@@ -65,7 +65,7 @@ We used SCRUM as a development method and used trello to create a scrumboard to 
 
 ## Predictive analysis
 ### Selecting a Model
-I have research and used a lot of machine learning modes but the most work was put into [this Ensemble learning script ](./Notebooks/Ensemble_Learning.ipynb).
+I have researched and used a lot of machine learning modes but the most work was put into [this Ensemble learning script ](./Notebooks/Ensemble_Learning.ipynb).
 I did not try this method because I read about this approach online, but I had this idea and asked about it in a meeting with TNO and they were interested to see the results, so that is why I tried this method of machine learning.
 
 ### Configuring a Model
@@ -85,8 +85,6 @@ In most of my scripts I have used cross validation and SKLearn evaluation metric
 ## Data preprocessing
 ### Data exploration
 The WebIQ dataset we got from TNO and the Agora dataset we found on Kaggle differed quite a lot, the Agora dataset is about 10 times as large but the records are smaller, the WebIQ has fewer but longer records.
-
-![wordcount](./Images/word_count.PNG)
 
 Because other group members focused on visualizing I did not visualize the raw data itself. 
 
@@ -112,9 +110,16 @@ The Agora dataset we found on Kaggle is a CSV file consisting of about 110.000 r
 The WebIQ dataset looked similar, I cant really say how it exactly looked since we have only seen it once.
 
 ### Data visualization (exploratory)
-
+Because other group members focused on visualizing the data, I mainly did research about methods of vectorization and machine learning that we did not yet use, sadly this led to the previously mentioned 
+[LSH](./Notebooks/LSH_MinHash.ipynb) script to be the only visualization that I did. This method did end up being early terminated but the visualization helped a lot in making this decision.
 
 ## Communication
 ### Presentations 
-### Writing paper
+I have given more than 2 presentations, if I remember correctly I did at least 1 open presentation and at least 2 closed presentation. I also will be doing the end presentation together with one other group member.
 
+### Writing paper
+I did make an effort in helping writing the paper. We started writing the paper in week 12 and finished it on the 14th of january. The last week we all came to school solely to work on the paper.
+
+## knockout criteria
+I have completed all the datacamp courses.
+![DataCamp](./Images/datacamp.PNG)
