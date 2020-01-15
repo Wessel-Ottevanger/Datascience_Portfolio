@@ -1,5 +1,22 @@
 # Portfolio
 
+## Domain knowledge
+### Introduction of the subject field
+The project me and my group members have been working on has been creating a darkweb text classifier that can classify text to interpol topics.
+The darkweb is a part of the deepweb, which is the part of the internet that has not been indexed and therefore not shown in the output of any search engine query.
+To gather text data in a place you cant search for TNO, the company we created this classifier for, has tasked WebIQ to scrape the dark web for data using a web crawler. This text data has been used to create the dark web text classifier.
+
+### Literature research
+To understand the problem domain I first did some literature research on the darkweb, later I also visited the darkweb myself to see what it looked like and how it worked.
+After gaining understanding about the prolem domain I researched the field of Natural Language Processing.
+During this research I have gained experience and knowledge about:
+
+- Preprocessing text data
+- Translating text data into numerical vectors
+- Using various machine learning models to train on these vectors
+
+### Explanation of Terminology, jargon and definitions
+[Terminology list.](./reflection_own_project_contribution.md)
 ## Reflection
 
 - [Reflection on own contribution to the project.](./reflection_own_project_contribution.md) 
@@ -48,16 +65,22 @@ We used SCRUM as a development method and used trello to create a scrumboard to 
 
 ## Predictive analysis
 ### Selecting a Model
+I have research and used a lot of machine learning modes but the most work was put into [this Ensemble learning script ](./Notebooks/Ensemble_Learning.ipynb).
+I did not try this method because I read about this approach online, but I had this idea and asked about it in a meeting with TNO and they were interested to see the results, so that is why I tried this method of machine learning.
+
 ### Configuring a Model
+When configuring a model, in the Ensemble learning example above I have used the standard parameters for all used machine learning models because it was quite time consuming to make this and I was already quite satisfied with the results. For other models I have tried tweaking hyperparametes to improve scores but in most cases it did not improve the results or the difference was too small to notice. 
+
+I did try tweaking the parameters on a sklearn neural network (before we knew that we shouldnt use it.) and on this model the results did improve by a lot, but this is quite logical since changing parameters means more layers or neurons in each layer and this will change the results by quite a bit.
+
 ### Training a model
+One of the reasons I have tried Ensemble learning is because it can help against under- or overfitting. When using an ensemble of machine learning models it will smooth out the predictions of multiple models and by doing this it reduces the effects of an under- or overfitted model.
+
 ### Evaluating a model
+In most of my scripts I have used cross validation and SKLearn evaluation metrics to evaluate the models I have trained. In the Ensemble learning script mentioned above I have specifically picked these classifiers because most work in a completely different way. One example of this is that in this script I am using a Logistic regression classifier and a Linear SVC model, which are similar, but work together with a Decision tree classifier and a Guassian naive bayes classifier.
+
 ### Visualizing the outcome of a model (explanatory)
-
-
-## Domain knowledge
-### Introduction of the subject field
-### Literature research
-### Explanation of Terminology, jargon and definitions
+ ////TODO script maken toevoegen :(
 
 ## Data preprocessing
 ### Data exploration
