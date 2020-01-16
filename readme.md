@@ -123,6 +123,6 @@ I have given more than 2 presentations, if I remember correctly I did at least 1
 ### Writing paper
 I did make an effort in helping writing the paper. We started writing the paper in week 12 and finished it on the 14th of january. The last week we all came to school solely to work on the paper.
 
-## knockout criteria
+## Data Camp
 I have completed all the datacamp courses.
 ![DataCamp](./Images/datacamp.PNG)
