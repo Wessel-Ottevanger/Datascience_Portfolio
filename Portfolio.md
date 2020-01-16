@@ -16,7 +16,7 @@ During this research I have gained experience and knowledge about:
 - Using various machine learning models to train on these vectors
 
 ### Explanation of Terminology, jargon and definitions
-[Terminology list.](./terminology.md)
+[Terminology list a group member created, but the team later contributed to.](./Terminology.pdf)
 ## Reflection
 
 - [Reflection on own contribution to the project.](./reflection_own_project_contribution.md) 
@@ -35,7 +35,7 @@ It was concluded that all labels were relevant but were not in the correct forma
 For this project I have used methods like Word2Vec and Fasttext to extract features and vectorize our text data.
 
 ##### What machine learning algorithms can be used for natural language processing?
-There are various machine learning algorithms that can be used for natural language processing, in [this Ensemble learning script ](./Notebooks/Ensemble_Learning.ipynb) I have used 6 different machine learning momdels, 6 different ways to vectorize text data and 5 different preprocessing methods.
+There are various machine learning algorithms that can be used for natural language processing, in [this Ensemble learning notebook ](./Notebooks/Ensemble_Learning.ipynb) I have used 6 different machine learning momdels, 6 different ways to vectorize text data and 5 different preprocessing methods.
 
 ##### What machine learning algorithms give the best result?
 The best results I have achieved this project was with my Ensemble learning model, which scored around 95% accuracy on the Agora dataset.
@@ -51,7 +51,7 @@ The goal for this project was to create a dark web topic classifier, although we
 For future work the most important task would be obtaining more and of higher quality data to be able to classify more topics more accurately.
 
 ### Conclusions
-In [this script ](./Notebooks/model_comparison.ipynb) the results of training a Linear SVC model with tfidf vectors and minimal stripping are show.
+In [this notebook ](./Notebooks/model_comparison.ipynb) the results of training a Linear SVC model with tfidf vectors and minimal stripping are show.
 I conclude that the results on the Agora dataset were a lot higher than on the WebIQ dataset because of 2 reasons:
 - The WebIQ sentences are long, which causes more variety and are harder to predict correctly.
 - The Agora dataset has a stronger bias towards drugs which makes predicting drugs really easy.
@@ -65,7 +65,7 @@ We used SCRUM as a development method and used trello to create a scrumboard to 
 
 ## Predictive analysis
 ### Selecting a Model
-I have researched and used a lot of machine learning modes but the most work was put into [this Ensemble learning script ](./Notebooks/Ensemble_Learning.ipynb).
+I have researched and used a lot of machine learning models but the most work was put into [this Ensemble learning notebook ](./Notebooks/Ensemble_Learning.ipynb).
 I did not try this method because I read about this approach online, but I had this idea and asked about it in a meeting with TNO and they were interested to see the results, so that is why I tried this method of machine learning.
 
 ### Configuring a Model
@@ -77,7 +77,7 @@ I did try tweaking the parameters on a sklearn neural network (before we knew th
 One of the reasons I have tried Ensemble learning is because it can help against under- or overfitting. When using an ensemble of machine learning models it will smooth out the predictions of multiple models and by doing this it reduces the effects of an under- or overfitted model.
 
 ### Evaluating a model
-In most of my scripts I have used cross validation and SKLearn evaluation metrics to evaluate the models I have trained. In the Ensemble learning script mentioned above I have specifically picked these classifiers because most work in a completely different way.
+In most of my notebooks I have used cross validation and SKLearn evaluation metrics to evaluate the models I have trained. In the Ensemble learning notebook mentioned above I have specifically picked these classifiers because most work in a completely different way.
 
 ### Visualizing the outcome of a model (explanatory)
 [In this notebook](./Notebooks/Visualizing_outcome_model.ipynb) I have created a heatmap of the confusion matrix of 4 different classifiers to see how the classifiers were affected by the bias in the dataset. If you compare the confusion matrices you can see that the Multinomial Logistic Regression classifier is the most affected and that the Linear SVC and the Decision Tree classifier were relatively unaffected.
@@ -110,8 +110,11 @@ The Agora dataset we found on Kaggle is a CSV file consisting of about 110.000 r
 The WebIQ dataset looked similar, I cant really say how it exactly looked since we have only seen it once.
 
 ### Data visualization (exploratory)
-Because other group members focused on visualizing the data, I mainly did research about methods of vectorization and machine learning that we did not yet use, sadly this led to the previously mentioned 
-[LSH](./Notebooks/LSH_MinHash.ipynb) script to be the only visualization that I did. This method did end up being early terminated but the visualization helped a lot in making this decision.
+To explore the data and visualize the heavy bias towards drugs I have created 2 pie charts. In the figure below you can see that in the Agora dataset 87.2 % is Drugs.
+![Pie1](./Images/Pie1.PNG) 
+
+The rest of the 12.8% that is not drugs is more evely divided but still not balanced whatsoever as seen in the figure below.
+![Pie2](./Images/Pie2.PNG)
 
 ## Communication
 ### Presentations 
